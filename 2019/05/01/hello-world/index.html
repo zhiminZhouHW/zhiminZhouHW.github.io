@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="随便写写">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-01T12:29:32.412Z">
+<meta property="og:updated_time" content="2019-05-01T13:25:57.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
@@ -383,9 +383,13 @@
                 
               
 
-              <time title="创建时间：2019-05-01 20:29:32" itemprop="dateCreated datePublished" datetime="2019-05-01T20:29:32+08:00">2019-05-01</time>
+              <time title="创建时间：2019-05-01 20:29:32 / 修改时间：21:25:57" itemprop="dateCreated datePublished" datetime="2019-05-01T20:29:32+08:00">2019-05-01</time>
             
 
+            
+              
+
+              
             
           </span>
 
@@ -393,6 +397,19 @@
 
           
             
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/05/01/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/05/01/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -485,6 +502,13 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
 
   
 
@@ -739,6 +763,40 @@
 
   
 
+
+  
+    <!-- LOCAL: You can save these files to your site and update links -->
+
+  
+  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
+<!-- END LOCAL -->
+
+<script>
+  function renderGitment() {
+    var gitment = new Gitmint({
+      id: window.location.pathname,
+      owner: 'zhiminZhouHW',
+      repo: 'https://github.com/zhiminZhouHW',
+      
+        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+      
+      oauth: {
+      
+      
+        client_secret: '8e0e456b6bab4306675bfcdacd893caf447278d5',
+      
+        client_id: '1e107e2072eb9e0d8899'
+      }
+    });
+    gitment.render('gitment-container');
+  }
+
+  
+    renderGitment();
+  
+</script>
 
   
 
